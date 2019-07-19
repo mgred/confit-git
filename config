@@ -1,0 +1,18 @@
+[user]
+	name = Marc Redemske
+	email = marc.redemske@gmail.com
+	username = mgred
+[core]
+	editor = nvim
+[push]
+	default = current
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = true
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[difftool]
+	prompt = false
+[diff]
+	tool = vimdiff
